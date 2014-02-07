@@ -145,7 +145,7 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 HAVE_ADRENO_SOURCE:= false
 
--include vendor/lge/gee/BoardConfigVendor.mk
+include vendor/lge/gee/BoardConfigVendor.mk
 
 #TWRP config
 DEVICE_RESOLUTION := 720x1280
