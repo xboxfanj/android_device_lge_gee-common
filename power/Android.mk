@@ -1,4 +1,4 @@
-ifneq ($(filter gee geeb geehrc geespr,$(TARGET_DEVICE)),)
+ifneq ($(filter gee geeb,$(TARGET_DEVICE)),)
 LOCAL_PATH := $(call my-dir)
 
 # HAL module implemenation stored in
