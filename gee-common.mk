@@ -185,7 +185,7 @@ PRODUCT_PACKAGES += \
 	hci_qcomm_init
 
 PRODUCT_PACKAGES += \
-	power.qcom
+	power.msm8960
 
 # QC Perf for Power HAL
 PRODUCT_PROPERTY_OVERRIDES += \
