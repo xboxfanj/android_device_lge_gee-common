@@ -246,8 +246,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     	telephony.lteOnCdmaDevice=1 \
     	telephony.lte.cdma.device=1 \
+        telephony.lteOnGsmDevice=1 \
+        telephony.lte.gsm.device=1 \
     	ro.telephony.default_network=10 \
-    	ro.ril.def.preferred.network=10
+    	ro.ril.def.preferred.network=10 \
+        persist.radio.mode_pref_nv10=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	drm.service.enabled=true
