@@ -23,6 +23,7 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 TARGET_ARCH_VARIANT_CPU := cortex-a15
+TARGET_ARCH_VARIANT_FPU := neon-vfpv4
 
 # Krait optimization 
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
