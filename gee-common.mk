@@ -282,5 +282,48 @@ PRODUCT_RUNTIMES += \
 # QRNGD
 PRODUCT_PACKAGES += qrngd
 
+# Hardware codecs
+PRODUCT_PROPERTY_OVERRIDES += \
+    qcom.hw.aac.encoder=true
+
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.hw=1 \
+    debug.egl.hw=1 \
+    debug.composition.type=gpu \
+    debug.enable.wl_log=1 \
+    persist.hwc.mdpcomp.enable=true \
+    debug.mdpcomp.logs=0 \
+    debug.qctwa.statusbar=1 \
+    debug.qctwa.preservebuf=1 \
+    debug.qc.hardware=true \
+    com.qc.hardware=true
+
+# System Props for the MM modules
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.enable-player=true \
+    media.stagefright.enable-http=true \
+    media.stagefright.enable-aac=true \
+    media.stagefright.enable-qcp=true \
+    media.stagefright.enable-fma2dp=true \
+    media.stagefright.enable-scan=true \
+    mmp.enable.3g2=true \
+    media.aac_51_output_enabled=true
+
+# Smoothness Tweaks
+PRODUCT_PROPERTY_OVERRIDES += \
+    windowsmgr.max_events_per_sec=300 \
+    debug.performance.tuning=1 \
+    video.accelerate.hw=1 \
+    ro.max.fling_velocity=12000 \
+    ro.min.fling_velocity=8000 \
+    ro.config.disable.hw_accel=false \
+    persist.sys.ui.hw=1
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
