@@ -47,7 +47,7 @@ PRODUCT_COPY_FILES += \
 	kernel/lge/gee/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
 	device/lge/gee-common/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
 	device/lge/gee-common/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-        device/lge/gee-common/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
+    device/lge/gee-common/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
 
 PRODUCT_COPY_FILES += \
 	device/lge/gee-common/audio/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
@@ -62,9 +62,11 @@ PRODUCT_COPY_FILES += \
 	device/lge/gee-common/ramdisk/fstab.qcom:root/fstab.qcom \
 	device/lge/gee-common/ramdisk/twrp.fstab:recovery/root/etc/twrp.fstab \
 	device/lge/gee-common/ramdisk/ueventd.qcom.rc:root/ueventd.qcom.rc \
-	device/lge/gee-common/conf/media_profiles.xml:system/etc/media_profiles.xml \
-	device/lge/gee-common/audio/media_codecs.xml:system/etc/media_codecs.xml \
 	device/lge/gee-common/ramdisk/fetch-swv:system/bin/fetch-swv
+
+PRODUCT_COPY_FILES += \
+	device/lge/gee-common/media/media_profiles.xml:system/etc/media_profiles.xml \
+	device/lge/gee-common/media/media_codecs.xml:system/etc/media_codecs.xml \
 
 # Prebuilt kl and kcm keymaps
 PRODUCT_COPY_FILES += \
