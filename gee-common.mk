@@ -235,8 +235,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	bdAddrLoader \
 	libwfcu \
-	conn_init \
-	OmniTorch
+	conn_init
 
 PRODUCT_PACKAGES += \
 	keystore.msm8960
