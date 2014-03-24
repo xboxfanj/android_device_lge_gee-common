@@ -251,7 +251,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
         telephony.lte.gsm.device=1 \
     	ro.telephony.default_network=10 \
     	ro.ril.def.preferred.network=10 \
-        persist.radio.mode_pref_nv10=1 \
         ril.subscription.types=NV,RUIM
 
 PRODUCT_PROPERTY_OVERRIDES += \
