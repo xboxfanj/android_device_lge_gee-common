@@ -98,8 +98,7 @@ typedef enum {
 
 enum {
   BUFFER_NOT_OWNED,
-  BUFFER_UNLOCKED,
-  BUFFER_LOCKED,
+  BUFFER_OWNED,
 };
 
 typedef enum {

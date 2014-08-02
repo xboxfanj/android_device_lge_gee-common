@@ -164,7 +164,6 @@ PRODUCT_PACKAGES += \
 	e2fsck
 
 PRODUCT_PACKAGES += \
-	libgenlock \
 	liboverlay \
 	hwcomposer.msm8960 \
 	gralloc.msm8960 \

@@ -94,7 +94,6 @@ ifeq ($(USE_DEVICE_SPECIFIC_CAMERA),true)
       endif
 
       LOCAL_C_INCLUDES+= hardware/qcom/display/msm8960/libgralloc
-      LOCAL_C_INCLUDES+= hardware/qcom/display/msm8960/libgenlock
       LOCAL_C_INCLUDES+= frameworks/native/include/media/hardware
       LOCAL_C_INCLUDES+= hardware/qcom/media/libstagefrighthw
 
@@ -106,7 +105,7 @@ ifeq ($(USE_DEVICE_SPECIFIC_CAMERA),true)
          LOCAL_SHARED_LIBRARIES:= libutils libui libcamera_client liblog libcutils libmmjpeg
       endif
 
-      LOCAL_SHARED_LIBRARIES+= libgenlock libbinder
+      LOCAL_SHARED_LIBRARIES+= libbinder
       ifneq ($(DLOPEN_LIBMMCAMERA),1)
         LOCAL_SHARED_LIBRARIES+= liboemcamera
       else
