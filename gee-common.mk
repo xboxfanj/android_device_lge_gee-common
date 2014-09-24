@@ -280,6 +280,16 @@ PRODUCT_RUNTIMES := \
 PRODUCT_RUNTIMES += \
 	runtime_libart
 
+# Hardware codecs
+PRODUCT_PROPERTY_OVERRIDES += \
+    qcom.hw.aac.encoder=true
+
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc
+
 # QRNGD
 PRODUCT_PACKAGES += qrngd
 
